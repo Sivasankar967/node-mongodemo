@@ -14,14 +14,11 @@ databse.on('error',(error)=>{
 console.log(error)
 });
 databse.once('connected',()=>{
-    console.log('database connected')
+    console.log('database connected');
 })
-app.use('/api',routes)
+app.use('/api',routes);
 
-routes.use(express.json())
 
-// app.use(bodyParser.urlencoded({ extended: true }))
-// app.use(bodyParser.json())
 
 
 app.listen(3000,()=>{
